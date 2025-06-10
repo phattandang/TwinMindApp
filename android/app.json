@@ -1,0 +1,10 @@
+{
+  "android": {
+    "package": "com.dangtanphat.twinmindappapp"
+  },
+  "extra": {
+    "eas": {
+      "projectId": "9d46e30a-3e9b-43f1-8517-0cb2c9313ade"
+    }
+  }
+}
