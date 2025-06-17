@@ -12,7 +12,7 @@ export const APPLE_AUTH_URL = "https://appleid.apple.com/auth/authorize";
 
 // Environment Constants
 export const BASE_URL = process.env.EXPO_PUBLIC_BASE_URL ?? 'http://localhost:8081';
-export const APP_SCHEME = process.env.EXPO_PUBLIC_SCHEME ?? 'twinmind';
+export const APP_SCHEME = process.env.EXPO_PUBLIC_SCHEME ?? 'twinmind://';
 export const JWT_SECRET = process.env.JWT_SECRET ?? 'your-secret-key';
 
 export const COOKIE_NAME = 'auth-token';

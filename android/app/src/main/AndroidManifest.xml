@@ -52,8 +52,8 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:scheme="twinmindapp"/>
-        <data android:scheme="exp+twinmindapp"/>
+        <data android:scheme="twinmind"/>
+        <data android:scheme="exp+twinmind"/>
       </intent-filter>
 
     </activity>

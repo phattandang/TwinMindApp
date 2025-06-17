@@ -28,10 +28,10 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const [error, setError] = useState<string | null>(null);
   const isWeb = Platform.OS === 'web';
 
-  const BASE_URL = process.env.EXPO_PUBLIC_BASE_URL || 'http://localhost:8081';
+  const BASE_URL = process.env.EXPO_PUBLIC_BASE_URL || 'http://192.168.1.100:8081';
   const APP_SCHEME = process.env.EXPO_PUBLIC_SCHEME || 'twinmind';
-  const redirectUri = `${BASE_URL}/api/auth/callback/google`; // Match authorized URI
-  const expoRedirectUri = Linking.createURL('/auth/callback', { scheme: APP_SCHEME }); // For Expo callback
+  const redirectUri = `${BASE_URL}/api/auth/callback/google`;
+  const expoRedirectUri = Linking.createURL('/auth/callback', { scheme: APP_SCHEME });
 
   useEffect(() => {
     // Handle deep link callback
